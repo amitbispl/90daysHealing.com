@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Welcome To 90dayshealing.com</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+
+  <!-- Favicons -->
+ 
+    </asp:ContentPlaceHolder>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">Multi</a></h1>
+      Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">Who We Are</a></li>
+          <li><a href="ourresearch.html" class="nav-link">Our Research</a></li>
+          <li><a href="ourtreatment.html" class="nav-link">Our Treatment</a></li>
+          <li><a href="ourdrteam.html" class="nav-link">Our Dr Team</a></li>
+          <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#themodal">Book an Appointment</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+      
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer id="footer">
+    <div class="footer-top">
+      <div class="container">  <a target="_blank" rel="nofollow" href="https://api.whatsapp.com/send?phone=918955615179" class="whatsappicon"><i class="bi-whatsapp"></i></a>
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="footer-info">
+              <h3>90 Days Healing </h3>
+              <p>
+                ADDRESS : Greater Noida G B Nagar  <br>
+                Uttar Pradesh 201318<br><br>
+                <strong>Phone:</strong> 8955615179<br>
+                <strong>Email:</strong> 90dayshealingprogram@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/90dayshealing" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=1buxqwwtpxhkb&utm_content=nyemci3" class="facebook"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="ourtreatment.html">Our Treatment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">Who We Are</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p></p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2022. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <div class="modal fade" id="themodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Full Name:</label>
+            <input type="text" class="form-control" id="name">
+          </div> 
+		  <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+		  <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Phone No.:</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Address:</label>
+            <textarea class="form-control" id="address"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" id="btnSend">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!--<script src="assets/js/jquery.min.js"></script>-->
+  <!-- Vendor JS Files -->
+  
+    </form>
+</body>
+</html>
